@@ -1,0 +1,73 @@
+@font-face{
+  font-family:'digital-clock-font';
+  src: url('./fonts/digital-dismay/digital-dismay.otf');
+ }
+
+#board td {
+  padding: 0;
+  border: 0;
+}
+
+#container {
+  padding: 8px;
+  background-color: lightgray;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.counter {
+  font-size: 40px;
+  font-family: 'digital-clock-font';
+  padding: 0 0 0 3px;
+  letter-spacing: 2px;
+  line-height: 36px;
+  color: red;
+  background-color: black;
+}
+
+#reset-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.cell {
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  border: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background-color: lightgray;
+  box-shadow:
+    -2px -2px 1px #555 inset,
+    2px 2px 1px white inset;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+.bomb {
+  background-color: black;
+}
+
+.one {
+  color: blue;
+}
+
+.test {
+  background-color: aqua;
+  border: 2px;
+}

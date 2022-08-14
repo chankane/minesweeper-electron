@@ -10,11 +10,37 @@
   <title>Hello World!</title>
 </head>
 
+<!-- <body>
+  <div id="container">
+    <div id="header-container">
+      <div id="rest-of-bombs" class="counter">045</div>
+      <button  id="reset-btn" class=" closed">&#128578;</button>
+      <div id="timer" class="counter">000</div>
+    </div>
+    <table id="board" border="1" cellspacing="0"></table>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body> -->
+
 <body>
-  <h1>Hello World!</h1>
-  We are using Node.js <span id="node-version"></span>,
-  Chromium <span id="chrome-version"></span>,
-  and Electron <span id="electron-version"></span>.
+  <table id="container" border="1">
+    <tr>
+      <td id="header-container">
+        <div id="rest-of-bombs" class="counter">045</div>
+        <!-- smile mark -->
+        <button  id="reset-btn" class=" closed">&#128578;</button>
+        <button  id="reset-btn" class=" closed">&#128526;</button>
+        <div id="timer" class="counter">000</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table id="board" border="1" cellspacing="0"></table>
+      </td>
+    </tr>
+    <div class="test">hoge</div>
+  </div>
 
   <!-- You can also require other files to run in this process -->
   <script src="./renderer.js"></script>
