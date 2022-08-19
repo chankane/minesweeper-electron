@@ -7,39 +7,16 @@
   <meta http-equiv="Content-Security-Policy"
     content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
   <link href="./styles.css" rel="stylesheet">
-  <title>Hello World!</title>
+  <title>Minesweeper</title>
 </head>
 
-<!-- <body>
-  <div id="container">
-    <div id="header-container">
-      <div id="rest-of-bombs" class="counter">045</div>
-      <button  id="reset-btn" class=" closed">&#128578;</button>
-      <div id="timer" class="counter">000</div>
+<body class="gnd">
+  <div id="container" class="vertical">
+    <div id="header-container" class="horizontal">
+      <div><span id="timer" class="counter">&#x23f1; 00:00</span></div>
+      <div id="rest-of-bombs" class="counter">&#x1f4a3; 9</div>
     </div>
-    <table id="board" border="1" cellspacing="0"></table>
-  </div>
-
-  <script src="./renderer.js"></script>
-</body> -->
-
-<body>
-  <table id="container" border="1">
-    <tr>
-      <td id="header-container">
-        <div id="rest-of-bombs" class="counter">045</div>
-        <!-- smile mark -->
-        <button  id="reset-btn" class=" closed">&#128578;</button>
-        <button  id="reset-btn" class=" closed">&#128526;</button>
-        <div id="timer" class="counter">000</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <table id="board" border="1" cellspacing="0"></table>
-      </td>
-    </tr>
-    <div class="test">hoge</div>
+    <div id="board" class="board back border-4px"></div>
   </div>
 
   <!-- You can also require other files to run in this process -->

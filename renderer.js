@@ -14,14 +14,14 @@ function setBomb(pos) {
 
 function setBombs(n) {
   for (let i = 0; i < n; i++) {
-    let id = Math.floor(Math.random() * WIDTH*HEIGHT);
+    let id = Math.floor(Math.random() * WIDTH * HEIGHT);
     const element = array[i];
   }
-  
+
 }
 
 function apply(params) {
-  
+
 }
 
 backBoard = new Array(HEIGHT)
@@ -31,20 +31,27 @@ for (let i = 0; i < WIDTH; i++) {
 }
 
 function createBoard() {
-  for (let i = 0; i < HEIGHT; i++) {
-    let tr = document.createElement('tr');
-    for (let j = 0; j < WIDTH; j++) {
-      let td = document.createElement('td');
-      let cell = document.createElement('button');
-      let index = i * WIDTH + j
-      cell.setAttribute('id', 'cell'+index)
-      cell.classList.add('cell')
-      cell.classList.add('closed')
-      cell.innerHTML = 1
-      td.appendChild(cell)
-      tr.appendChild(td)
-    }
-    board.appendChild(tr)
+  // for (let i = 0; i < HEIGHT; i++) {
+  //   let tr = document.createElement('tr');
+  //   for (let j = 0; j < WIDTH; j++) {
+  //     let td = document.createElement('td');
+  //     let cell = document.createElement('button');
+  //     let index = i * WIDTH + j
+  //     cell.setAttribute('id', 'cell' + index)
+  //     cell.classList.add('btn')
+  //     cell.classList.add('cell')
+  //     //cell.classList.add('closed')
+  //     //cell.innerHTML = 1
+  //     td.appendChild(cell)
+  //     tr.appendChild(td)
+  //   }
+  //   board.appendChild(tr)
+  // }
+  for (let i = 0; i < WIDTH * HEIGHT; i++) {
+    let cell = document.createElement('button');
+    cell.setAttribute('id', 'cell' + i)
+    cell.classList.add('btn')
+    board.appendChild(cell)
   }
 }
 
